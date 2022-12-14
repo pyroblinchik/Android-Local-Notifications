@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/button_simple_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="250dp"
+        android:text="simple notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_long_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="notification long text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_simple_notification" />
+
+    <Button
+        android:id="@+id/button_download_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="download notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_long_notification" />
+
+    <Button
+        android:id="@+id/button_image_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="image notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_download_notification" />
+
+    <Button
+        android:id="@+id/button_reply_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reply notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_image_notification" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
